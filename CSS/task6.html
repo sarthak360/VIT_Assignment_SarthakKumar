@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            width: 450px;
+            border: solid 1px black;
+            text-align: center;
+        }
+        .login-container img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+           
+        }
+       
+        .login-container label{
+            text-align: left;
+            margin-left: 5px;
+            margin-top: 5px;
+            display: block;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-btn {
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 10px;
+        }
+        .button {
+            background-color :rgb(210, 204, 204);
+            color: black;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+        .cancel-btn {
+            width: fit-content;
+            background-color: red;
+            color: white;
+            padding: 5px; 
+            border-radius: 5px;
+        }
+        .button a{
+            text-decoration: none;
+            color: black;
+
+        }
+        .button span{
+        text-decoration: underline;
+        }
+        .remember-me-container {
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .forgot-password {
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="User Avatar">
+    
+    <form>
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" >
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" >
+
+        <button class="login-btn" type="submit">Login</button>
+
+        <div class="remember-me-container">
+            <label>
+                <input type="checkbox"> Remember me
+            </label>
+        </div>
+  <div class="button">
+        <button class="cancel-btn" type="button" >
+            Cancel
+        </button>
+            <a href="#">Forgot <span>password?</span></a>
+    </div>
+    </form>
+</div>
+
+</body>
+</html>
